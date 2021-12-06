@@ -1,0 +1,76 @@
+.levelOne {
+  background-color: var(--volcano-levelOne-bg-color);
+
+  .volcano-img {
+    padding-top: 40px;
+    max-width: 400px;
+  }
+
+  .sectionContainer {
+    .level-1-p-1,
+    .level-1-p-2,
+    .level-1-q-statement,
+    .level-1-answer {
+      animation-name: fadeIn;
+    }
+
+    .level-1-p-1 {
+      animation-duration: 3s;
+    }
+
+    .level-1-p-2,
+    .level-1-q-statement,
+    .level-1-answer {
+      animation-duration: 1s;
+      animation-fill-mode: backwards;
+    }
+
+    .level-1-p-2 {
+      animation-delay: 3s;
+    }
+
+    .level-1-q-statement {
+      animation-delay: 4s;
+    }
+
+    .level-1-Q1 {
+      position: relative;
+    }
+
+    .level-1-Q1-effect {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background-color: var(--volcano-levelOne-bg-color);
+
+      animation: hideShow 1s ease-in;
+      animation-fill-mode: forwards;
+      animation-delay: 6s;
+    }
+
+    .level-1-answer {
+      animation-delay: 7s;
+    }
+  }
+}
+
+// keyframe --------------------
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hideShow {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}

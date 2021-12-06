@@ -1,0 +1,34 @@
+@import "./reset";
+@import "./landing/landing";
+@import "./landing//gameOne_volcano";
+@import "./navbar";
+@import "./volcano/volcano";
+@import "./volcano/levelOne";
+@import "./volcano//levelTwo";
+@import "./volcano//levelThreeA";
+@import "./volcano/levelFour";
+@import "./volcano/levelFive";
+
+:root {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  --landing-volcano-bg-color: #dd6862;
+  --landing-gameTwo-bg-color: #a3beaa;
+  --landing-gameThree-bg-color: #88c6c7;
+
+  --volcano-levelOne-bg-color: #dd6862;
+  --volcano-levelTwo-bg-color: #8fd3d4;
+  --volcano-levelThree-bg-color: #fcf0e4;
+  --volcano-levelFourACorrect-bg-color: #f0dcc2;
+  --volcano-levelFourAIncorrect-bg-color: #fcf0e4;
+  --volcano-levelFourBCorrect-bg-color: #cbecd4;
+  --volcano-levelFourBIncorrect-bg-color: #fcf0e4;
+  --volcano-levelFiveA-bg-color: #fcf0e4;
+  --volcano-levelFiveB-bg-color: #fcf0e4;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: hidden;
+}

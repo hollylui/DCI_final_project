@@ -1,0 +1,24 @@
+nav {
+  text-align: left;
+  padding: 10px;
+  font-size: 1.6rem;
+  background-color: rgb(160, 160, 160);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  .nav-link {
+    margin: 0 10px;
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+      color: #fff;
+    }
+
+    &:hover {
+      color: #000;
+    }
+  }
+}

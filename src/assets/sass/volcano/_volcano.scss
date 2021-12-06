@@ -1,0 +1,76 @@
+.level {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 30px -8px 0 -8px;
+  font-size: 2rem;
+
+  .animals-img {
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .sectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      margin: 10px 0;
+    }
+
+    .q-statement {
+      font-size: 3rem;
+    }
+
+    .question {
+      font-size: 4rem;
+    }
+
+    .input-answer {
+      border: 4px solid #000;
+      border-radius: 10px;
+      max-width: 200px;
+      height: 40px;
+      font-size: 2.5rem;
+      text-indent: 10px;
+    }
+  }
+
+  .nextLevel {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff94;
+    color: #000000;
+    border: 4px solid black;
+    border-radius: 50%;
+    text-decoration: none;
+    margin-top: 40px;
+  }
+
+  .play-again {
+    text-decoration: none;
+    background-color: #f86d56;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+
+    &:link,
+    &:visited {
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: #ffb34f;
+      color: #000;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.levelFourA-correct {
+  background-color: var(--volcano-levelFourACorrect-bg-color);
+}
+
+.levelFourA-incorrect {
+  background-color: var(--volcano-levelFourAIncorrect-bg-color);
+}
+
+.levelFourB-correct {
+  background-color: var(--volcano-levelFourBCorrect-bg-color);
+}
+
+.levelFourB-incorrect {
+  background-color: var(--volcano-levelFourBIncorrect-bg-color);
+
+  .level-4b-name {
+    font-weight: 700;
+    font-size: 3rem;
+  }
+}
