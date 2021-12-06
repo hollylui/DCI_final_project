@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a96a4107.chunk.css",
+    "main.js": "/static/js/main.af785467.chunk.js",
+    "main.js.map": "/static/js/main.af785467.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fc2c6a25.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fc2c6a25.js.map",
+    "static/js/2.fd8e570c.chunk.js": "/static/js/2.fd8e570c.chunk.js",
+    "static/js/2.fd8e570c.chunk.js.map": "/static/js/2.fd8e570c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.a96a4107.chunk.css.map": "/static/css/main.a96a4107.chunk.css.map",
+    "static/js/2.fd8e570c.chunk.js.LICENSE.txt": "/static/js/2.fd8e570c.chunk.js.LICENSE.txt",
+    "static/media/level_2_boat.94d25081.gif": "/static/media/level_2_boat.94d25081.gif",
+    "static/media/level_3a_animal_1.415ca428.gif": "/static/media/level_3a_animal_1.415ca428.gif",
+    "static/media/level_3a_animal_2.573b97a3.gif": "/static/media/level_3a_animal_2.573b97a3.gif",
+    "static/media/level_3a_animal_3.3e5bbd8a.gif": "/static/media/level_3a_animal_3.3e5bbd8a.gif",
+    "static/media/level_3a_animal_4.d103f54b.gif": "/static/media/level_3a_animal_4.d103f54b.gif",
+    "static/media/level_3a_animal_5.740931e0.gif": "/static/media/level_3a_animal_5.740931e0.gif",
+    "static/media/level_3a_animal_6.42f2e6fb.gif": "/static/media/level_3a_animal_6.42f2e6fb.gif",
+    "static/media/level_3b_animal_1.937e933f.gif": "/static/media/level_3b_animal_1.937e933f.gif",
+    "static/media/level_3b_animal_2.9caa750b.gif": "/static/media/level_3b_animal_2.9caa750b.gif",
+    "static/media/level_3b_animal_3.7b8ebd3f.gif": "/static/media/level_3b_animal_3.7b8ebd3f.gif",
+    "static/media/level_4a_correct.ec0366d3.gif": "/static/media/level_4a_correct.ec0366d3.gif",
+    "static/media/level_4a_incorrect.782f6269.gif": "/static/media/level_4a_incorrect.782f6269.gif",
+    "static/media/level_4b_correct.a70f5ef6.gif": "/static/media/level_4b_correct.a70f5ef6.gif",
+    "static/media/level_4b_incorrect.d5eab58e.gif": "/static/media/level_4b_incorrect.d5eab58e.gif",
+    "static/media/level_5a.71288745.gif": "/static/media/level_5a.71288745.gif",
+    "static/media/level_5b.087d1853.gif": "/static/media/level_5b.087d1853.gif",
+    "static/media/volcano.a9674f24.gif": "/static/media/volcano.a9674f24.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fc2c6a25.js",
+    "static/js/2.fd8e570c.chunk.js",
+    "static/css/main.a96a4107.chunk.css",
+    "static/js/main.af785467.chunk.js"
+  ]
+}
