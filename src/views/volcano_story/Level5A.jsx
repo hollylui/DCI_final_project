@@ -4,8 +4,7 @@ import VolcanoContext from "../../context/VolcanoContext";
 import level5_final from "../../assets/images/volcano/level_5a.gif";
 
 const LevelFiveA = () => {
-  const { level_5A_answer, setLevel_5A_answer, setPlayAgain } =
-    useContext(VolcanoContext);
+  const { setPlayAgain } = useContext(VolcanoContext);
 
   function playAgainHandler() {
     setPlayAgain(true);

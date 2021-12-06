@@ -4,12 +4,8 @@ import VolcanoContext from "../../context/VolcanoContext";
 import level4_final from "../../assets/images/volcano/level_4a_incorrect.gif";
 
 const LevelFourAIncorrect = () => {
-  const { name, setPlayAgain, level_4A_answer, setLevel_4A_answer } =
+  const { name, level_4A_answer, setLevel_4A_answer } =
     useContext(VolcanoContext);
-
-  function playAgainHandler() {
-    setPlayAgain(true);
-  }
 
   const levelFourAAnswerHandler = (e) => {
     setLevel_4A_answer(e.target.value);
