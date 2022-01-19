@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import Head from "next/head";
 
 import messageImg from "../../../assets/images/forAllGames/messageBubble.png";
@@ -10,11 +10,17 @@ import clientPromise from "../../../lib/mongodb";
 import styles from "./styles.module.scss";
 
 export default function PageOne({ volcano }) {
-  const { pageIndex, setPageIndex } = useContext(AppContext);
+  const { pageIndex, setPageIndex, heroName, age } = useContext(AppContext);
 
   //   next btn page handler
   const nextBtnHandler = () => {
     setPageIndex(pageIndex + 1);
+    if (pageIndex === 1) {
+      localStorage.setItem("heroName", heroName);
+    }
+    if (pageIndex === 2) {
+      localStorage.setItem("age", age);
+    }
   };
 
   // back btn page handler
@@ -35,6 +41,14 @@ export default function PageOne({ volcano }) {
     styles,
     volcano,
   };
+
+  // useEffect(() => {
+  //   localStorage.setItem("heroName", heroName);
+  // }, [heroName]);
+
+  // useEffect(() => {
+  //   localStorage.setItem("age", age);
+  // }, [age]);
 
   return (
     <div className={styles.container}>

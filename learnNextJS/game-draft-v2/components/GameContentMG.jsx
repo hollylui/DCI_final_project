@@ -1,7 +1,10 @@
 import Image from "next/image";
-import { useContext, useState } from "react";
+
+import { useContext } from "react";
 
 import AppContext from "../context/AppContext";
+import NameForm from "./nameForm/NameForm";
+import Age from "./age/Age";
 
 export default function GameContent({
   styles,
@@ -9,13 +12,8 @@ export default function GameContent({
   volcanoImg,
   volcano,
 }) {
-  const { pageIndex } = useContext(AppContext);
-  const [heroName, setHeroName] = useState("");
-
-  const nameHanlder = (e) => {
-    setHeroName(e.target.value);
-    localStorage.setItem("heroName", heroName);
-  };
+  const { pageIndex, heroName } = useContext(AppContext);
+  const message = volcano[pageIndex].message;
 
   return (
     <div className={styles.position}>
@@ -29,17 +27,23 @@ export default function GameContent({
             objectFit="cover"
           />
         </div>
-        <p className={styles.message}>
-          {volcano[pageIndex].message}{" "}
-          <form action="">
-            <input
-              type="text"
-              name="heroName"
-              id="heroName"
-              onChange={nameHanlder}
-            />
-          </form>
-        </p>
+        <div className={styles.message}>
+          {pageIndex === 0 && message}
+          {pageIndex === 1 && (
+            <>
+              <div>{message}</div>
+              <NameForm />
+            </>
+          )}
+          {pageIndex === 2 && (
+            <>
+              <p style={{ margin: 0, padding: 0 }}>Hello {heroName}</p>
+              <p style={{ margin: 0, padding: 0 }}>{message}</p>
+              <Age />
+            </>
+          )}
+          {pageIndex === 3 && message}
+        </div>
 
         <div className={styles.volcanoImg}>
           <Image src={volcanoImg} alt="volcano" />
